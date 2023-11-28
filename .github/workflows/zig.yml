@@ -1,0 +1,25 @@
+name: Zig workflows
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    
+    steps:
+      - name: checkout Kode
+        uses: actions/checkout@v3
+
+      - name: setup zig
+        uses: goto-bus-stop/setup-zig@v2
+        with:
+          cache: false
+      
+      - name: format kode zig
+        run: zig fmt .

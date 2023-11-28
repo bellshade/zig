@@ -1,5 +1,5 @@
 // import modul std ke dalam variabel `std`
-const std = @import("std").debug.print;
+const std = @import("std");
 
 // fungsi `main()` adalah fungsi utama, fungsi ini akan dipanggil saat program dijalankan
 pub fn main() void {

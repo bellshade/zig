@@ -13,6 +13,7 @@ Untuk menggunakan repositori dengan maksimal, kalian perlu belajar programming d
 | Langkah |              Topik               |                                  Target Pembelajaran                                  |            Materi Rujukan             |
 | :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :-----------------------------------: |
 |   01    | Introduksi Pemograman dan Zig | Memahami apa itu membuat program dan apa peran Zig dalam proses pembuatan program  |    [Materi](Basic/01_introduction)    |
+|   02    |            Tipe data             |                              Memahami apa itu tipe data                               |     [Materi](Basic/02_tipe_data)      |
 
 
 ## 🤩 Ayo ikut kami dan berkontribusi! 🤩
@@ -20,3 +21,7 @@ Untuk menggunakan repositori dengan maksimal, kalian perlu belajar programming d
 Bantuan kalian diperlukan Agar Bellshade dapat lebih jauh lagi membantu anak-anak Indonesia belajar _programming_, kita butuh tenaga kalian!
 
 > "Dengan Bellshade, aku jadi bisa _ngoding_! Terima kasih Bellshade!"
+
+Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **Zig** ini. Tapi, sebelum itu, silahkan baca terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih!
+
+Untuk informasi lebih lanjut, mari gabung dalam komunitas [Discord Channel WPU](http://discord.gg/S4rrXQU) dan [Discord Channel Kelas Terbuka](https://discord.gg/eavqxxTU)

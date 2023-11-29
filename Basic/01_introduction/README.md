@@ -47,7 +47,6 @@ choco install zig
 # dargonfly bsd
 ravensw install zig-single-standard
 ```
-- **
 
 
 ## contoh `hello world` pada zig

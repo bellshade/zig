@@ -14,6 +14,9 @@ Untuk menggunakan repositori dengan maksimal, kalian perlu belajar programming d
 | :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :-----------------------------------: |
 |   01    | Introduksi Pemograman dan Zig | Memahami apa itu membuat program dan apa peran Zig dalam proses pembuatan program  |    [Materi](Basic/01_introduction)    |
 |   02    |            Tipe data             |                              Memahami apa itu tipe data                               |     [Materi](Basic/02_tipe_data)      |
+|   03    |           Var & Const            |                              Memahami apa itu var dan const                           |     [Materi](Basic/03_var_vs_const)   |
+|   04    |            Latihan               |                              Latihan dari materi sebelumnya                           |     [Materi](Basic/04_latihan)      |
+|   05    |     Format Panggilan Variabel    |                              Memahami cara memanggil variabel                         |     [Materi](Basic/05_format_panggilan_variabel)      |
 
 
 ## 🤩 Ayo ikut kami dan berkontribusi! 🤩

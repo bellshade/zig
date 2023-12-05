@@ -19,7 +19,27 @@ jobs:
       - name: setup zig
         uses: goto-bus-stop/setup-zig@v2
         with:
+          version: 0.11.0
           cache: false
+          
       
       - name: format kode zig
         run: zig fmt .
+
+      - name: testing kode zig
+        if: (startsWith(matrix.runs-on, 'ubuntu')) || (startsWith(matrix.runs-on, 'macos'))
+        run: sh runtest.sh
+
+      - name: testing kode zig di windows
+        if: (startsWith(matrix.runs-on, 'windows')
+        run: ./runtest.cmd
+
+  linting-kode-zig:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: goto-bus-stop/setup-zig@v2
+        with:
+          version: 0.11.0
+          cache: false
+      - run: zig fmt --check --ast-check .

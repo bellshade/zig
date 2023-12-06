@@ -62,6 +62,47 @@ zig fmt --check .
 zig test namaFile.zig
 ```
 
+## memasukkan file testing ke dalam ``build.zig``
+
+kamu bisa menambahkan beberapa contoh kode algoritma selain dari basic, tetapi kamu harus mengikuti beberapa langkah antara lain:
+- contoh dari kode kamu memiliki testing seperti contoh
+  ```zig
+  const std = @import("std");
+
+  // fungsi untuk menghitung faktorial secara rekursif
+  fn faktorialRekursif(comptime T: type, n: T) T {
+      if (n < 2 and n > 0) return 1 else return n * faktorial(T, n - 1);
+  }
+
+  // testing faktorial rekursif
+  test "faktorial rekursif" {
+      try std.testing.expectEqual(@as(c_int, 720), faktorialRekursif(u64, 7));
+      try std.testing.expectEqual(@as(u64, 5040), faktorialRekursif(u64, 7));
+  }
+  ```
+  memiliki testing yang dapat mengetest dari fungsi tersebut
+- kemudian menempatkan struktur folder benar sebagai contoh
+  ```
+  ├── math  
+  │   ├── faktorial.zig
+  ```
+- kemudian masukan hasil yang sudah kamu buat ke dalam file ``build.zig`` agar melakukan testing semua file test
+  ```zig
+  if (std.mem.eql(u8, op, "kategori/nama_algo"))
+        buat_algo(b, .{
+            .optimize = optimize,
+            .target = target,
+            .name = "nama_file_yang_kamu_tambahkan.zig",
+            .category = "nama_folder",
+        })
+  ```
+- kemudian kamu bisa menambahkan running testingnya pada ``runtest.sh`` dengan menambahkan
+  ```sh
+  # runtest.sh
+  $ZIG_TEST_COMMAND -Dalgoritma=folder/nama_algo $argumen
+  ```
+
+
 # *Pull Request*
 
 ***Pull request* yang baik**

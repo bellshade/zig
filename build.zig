@@ -27,6 +27,16 @@ pub fn build(b: *std.Build) void {
             .name = "faktorial.zig",
             .category = "math",
         });
+
+    // algoritma/sorting
+    // bubble sorting
+    if (std.mem.eql(u8, op, "algorithm/sorting/bubbleSort"))
+        buat_algo(b, .{
+            .optimize = optimize,
+            .target = target,
+            .name = "bubbleSort.zig",
+            .category = "algorithm/sorting",
+        });
 }
 
 // fungsi untuk membangun algoritma berdasarkan informasi yang diberikan

@@ -19,4 +19,5 @@ argumen='--summary all -freference-trace'
 # yang sudah dibuat
 $ZIG_TEST_COMMAND -Dalgoritma=math/gcd $argumen
 $ZIG_TEST_COMMAND -Dalgoritma=math/faktorial $argumen
+$ZIG_TEST_COMMAND -Dalgoritma=math/ceil $argumen
 $ZIG_TEST_COMMAND -Dalgoritma=algorithm/sorting/bubbleSort $argumen

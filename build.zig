@@ -28,6 +28,14 @@ pub fn build(b: *std.Build) void {
             .category = "math",
         });
 
+    if (std.mem.eql(u8, op, "math/ceil"))
+        buat_algo(b, .{
+            .optimize = optimize,
+            .target = target,
+            .name = "ceil.zig",
+            .category = "math",
+        });
+
     // algoritma/sorting
     // bubble sorting
     if (std.mem.eql(u8, op, "algorithm/sorting/bubbleSort"))

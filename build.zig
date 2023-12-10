@@ -17,6 +17,34 @@ pub fn build(b: *std.Build) void {
             .name = "gcd.zig",
             .category = "math",
         });
+
+    // memilih folder berdasarkan opsi algoritma
+    // jika opsi adalah 'math/faktorial' maka fungsi buat_algo dipanggil untuk membuat algoritma faktorial
+    if (std.mem.eql(u8, op, "math/faktorial"))
+        buat_algo(b, .{
+            .optimize = optimize,
+            .target = target,
+            .name = "faktorial.zig",
+            .category = "math",
+        });
+
+    if (std.mem.eql(u8, op, "math/ceil"))
+        buat_algo(b, .{
+            .optimize = optimize,
+            .target = target,
+            .name = "ceil.zig",
+            .category = "math",
+        });
+
+    // algoritma/sorting
+    // bubble sorting
+    if (std.mem.eql(u8, op, "algorithm/sorting/bubbleSort"))
+        buat_algo(b, .{
+            .optimize = optimize,
+            .target = target,
+            .name = "bubbleSort.zig",
+            .category = "algorithm/sorting",
+        });
 }
 
 // fungsi untuk membangun algoritma berdasarkan informasi yang diberikan

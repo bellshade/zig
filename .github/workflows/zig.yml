@@ -31,7 +31,7 @@ jobs:
         run: sh runtest.sh
 
       - name: testing kode zig di windows
-        if: (startsWith(matrix.runs-on, 'windows')
+        if: (startsWith(matrix.runs-on, 'windows'))
         run: ./runtest.cmd
 
   linting-kode-zig:

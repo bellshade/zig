@@ -4,19 +4,19 @@
 
 Repositori ini berisi kumpulan berbagai macam _source code_ struktur data, algorithm, analisis matematika, serta tutorial yang diimplementasikan dengan menggunakan bahasa pemograman Zig
 
-
 ### Baru Belajar? Mulai dari [sini](Basic) 🌟
 
 Untuk menggunakan repositori dengan maksimal, kalian perlu belajar programming dasar dahulu. Silahkan ikuti alur belajar berikut untuk mempelajari dasar - dasar pemograman langsung menggunakan Zig
 
-| Langkah |              Topik               |                                  Target Pembelajaran                                  |            Materi Rujukan             |
-| :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :-----------------------------------: |
-|   01    | Introduksi Pemograman dan Zig | Memahami apa itu membuat program dan apa peran Zig dalam proses pembuatan program  |    [Materi](Basic/01_introduction)    |
-|   02    |            Tipe data             |                              Memahami apa itu tipe data                               |     [Materi](Basic/02_tipe_data)      |
-|   03    |           Var & Const            |                              Memahami apa itu var dan const                           |     [Materi](Basic/03_var_vs_const)   |
-|   04    |            Latihan               |                              Latihan dari materi sebelumnya                           |     [Materi](Basic/04_latihan)      |
-|   05    |     Format Panggilan Variabel    |                              Memahami cara memanggil variabel                         |     [Materi](Basic/05_format_panggilan_variabel)      |
-
+| Langkah |             Topik             |                                Target Pembelajaran                                |                 Materi Rujukan                  |
+| :-----: | :---------------------------: | :-------------------------------------------------------------------------------: | :---------------------------------------------: |
+|   01    | Introduksi Pemograman dan Zig | Memahami apa itu membuat program dan apa peran Zig dalam proses pembuatan program |         [Materi](Basic/01_introduction)         |
+|   02    |           Tipe data           |                            Memahami apa itu tipe data                             |          [Materi](Basic/02_tipe_data)           |
+|   03    |          Var & Const          |                          Memahami apa itu var dan const                           |         [Materi](Basic/03_var_vs_const)         |
+|   04    |            Latihan            |                          Latihan dari materi sebelumnya                           |           [Materi](Basic/04_latihan)            |
+|   05    |   Format Panggilan Variabel   |                         Memahami cara memanggil variabel                          |  [Materi](Basic/05_format_panggilan_variabel)   |
+|   06    |           Operator            |                     Memahami Operator yang terdapat pada zig                      | [Materi](Basic/06_operator_pada_pemograman_zig) |
+|   07    |            Logika             |                        Memahami cara kerja logika pada zig                        |  [Materi](Basic/07_logika_pada_pemograman_zig)  |
 
 ## 🤩 Ayo ikut kami dan berkontribusi! 🤩
 

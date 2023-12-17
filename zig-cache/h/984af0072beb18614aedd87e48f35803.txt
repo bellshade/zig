@@ -1,0 +1,2 @@
+0
+18381 281474978124511 1691099042000000000 e62bdb54a9e17c25972d03e5f9cfef70 0 C:\Users\Sahrul\AppData\Roaming\Code\User\globalStorage\ziglang.vscode-zig\zig_install\lib\libc\mingw\lib-common\advapi32.def.in

@@ -1,5 +1,5 @@
 # Pendahuluan
-Materi kali ini ialah materi yang menjelaskan tentang logika pada pemrograman Zig. Sebenarnya setiap logika akan berjalan tergantung dari operator yang kita gunakan. Jika kalian belum paham tentang Opeator kalian bisa berkunjung di materi Opearator [Operator](https://github.com/bellshade/zig/Bellshade/06_operator_pada_pemrograman_zig)
+Materi kali ini ialah materi yang menjelaskan tentang logika pada pemrograman Zig. Sebenarnya setiap logika akan berjalan tergantung dari operator yang kita gunakan. Jika kalian belum paham tentang Opeator kalian bisa berkunjung di materi Opearator [Operator](https://github.com/bellshade/zig/Basic/06_operator_pada_pemrograman_zig)
 
 ## If Else
 If Else ialah merupakan logika percabangan yang digunakan untuk mengechek hasil operasi dan akan return data dari statemen yang telah ditetapkan. Logika ini sering digunakan apalgi untuk pengechekan nilai sebuah data. Untuk example contohnya itu seperti ini 

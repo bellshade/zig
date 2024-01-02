@@ -1,6 +1,47 @@
 ## Pendahuluan
 Yoo, comeback to materi Zig :u. Materi kali ini ialah tentang looping ialah dimana metode yang digunakan untuk melakukan program dengan data yang telah ditentukan. Seperti pada bahasa umumnya seperti `python`, `go`, `c++`, `c`, dan sebagainya . Looping tetaplah looping , fungsinya sama dengan bahasa pemrograman yang lainnya. Hanya saja style nya yang berbeda. Nah kali ini ada beberapa case untuk memahami gimana si looping didalam zig itu hehee :u
 
+## Sebelum Mulai
+Sebelum dimulai mari kita perkenalan dulu tentang komponen komponen yang ada didalam for loop Zig. Style program zig ini unik, selain yang typesafe, zig juga punya struktur yang berbeda. Dalam menggunakan for loop ada yang harus kalian perhatikan. 
+```zig
+// variabel ini digunakan untuk memanggil module standard zig
+const std = @import("std");
+
+pub fn main() void {
+    // sebagai contoh disini kita punya array yaitu number
+    // dimana kumpulan angka dengan tipe data u8
+    // fyi _ didaalm `[]` itu menandakan jumlah datanya bebas
+    // tergantung yang kita mau
+    var number = [_]u8{ 2, 5, 4, 7, 8, 9 };
+    ...
+}
+```
+Nah disini bagian utamanya, `for()` didalam kurung ini diisi dengan variabel atau logic yang mau kalian gunakan, nah untuk mengambil per datanya kalian bisa tambahkan ditambahkan disamping `for()` itu dengan `|example|` bebas disini kalian namakan apa, setidaknya bisa kalian pahami. Contohnya seperti ini
+```zig
+// variabel ini digunakan untuk memanggil module standard zig
+const std = @import("std");
+
+pub fn main() void {
+    var number = [_]u8{ 2, 5, 4, 7, 8, 9 };
+
+    // for statement yang digunakan untuk melakukan looping
+    // variabel number sebagai counter untuk melakukan looping pada data di dalamnya
+    // |value| sebagai variabel untuk mengambil setiap data yang ada didalam number
+    for (number) |value| {
+        // logic pertama jika angka didalam variabel number habis dibagi 2
+        // maka akan di lewati dan langsung ke logic yang selanjutnya
+        if (value % 2 == 0) {
+            // statement untuk next ke logic berikutnya
+            continue;
+        } else {
+            // logic ini akan jalan jika kondisi di if tidak terpenuhi
+            std.debug.print("angka: {d}\n", .{value});
+        }
+    }
+    ...
+}
+```
+
 ## For a.k.a 4Loop, 4Luping
 Seperti yang dijelaskan didalam pendahuluan, for loop disini bisa digunakan untuk dilakukan dengan tipe data yang berbeda. Untuk for loop didalam zig ini punya style yang sangat unik, mau tau ? ini dia stylenya
 
